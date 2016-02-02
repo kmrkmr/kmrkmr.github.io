@@ -1,0 +1,112 @@
+body   
+{
+  font-family: 'メイリオ', sans-serif; /*フォントを決める*/
+  background-color: #edede3;
+  margin: 0;                 /*bodyまわりの余白をなくす*/
+}
+
+p
+{
+  line-height: 1.5;
+}
+
+/*ヘッダー*/
+header
+{
+  background-color: #ffffff;
+  border-bottom: solid 1px #aaaaaa;  /*ヘッダーの下の罫線*/
+  margin-bottom: 30px;               /*ヘッダーとアーティクルの間*/
+  box-shadow: 0 1px 7px #aaaaaa;     /*ヘッダーの影*/
+  padding: 5px;                      /*ヘッダ内の文字をゆったりさせる*/
+}
+
+header h1    /*ヘッダの文字だけに注文をつける*/
+{
+  font-family: 'メイリオ', sans-serif;
+  font-size: 24px;
+  width: 900px;              
+  margin-left: auto;         
+  margin-right: auto;   /*アーティクルとフッタに合わせる*/
+}
+
+/*ナビゲーションメニュ*/
+nav ul
+{
+  list-style-type: none;  /*リストの黒丸をとる*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;   /*navのリスト周りの余白をとる*/
+  font-size: 0;      /*html上のul内で改行された分の余白をとる*/
+}
+
+nav li  /*ナビゲーションメニュのリストの表示*/
+{
+  display: inline;    /*liの本来の縦表示を横表示にする（インラインボックスの構成）*/
+  font-size: 12px;
+  padding-left: 10px;  /*それぞれ単語(li)の左に余白*/
+  padding-right: 10px; /*それぞれ単語(li)の右に余白*/
+}
+
+nav  /*ナヴィゲーションメニュ自体をどうするか*/
+{
+  width: 900px;              
+  margin-left: auto;         
+  margin-right: auto;   /*この３行でアーティクルと揃う*/
+  text-align: right;    /*ヘッダの右側に配置*/
+  margin-top: -20px;    /*ヘッダのサイト名と高さ調整フィーリング*/
+}
+
+nav a   /*文字のデザイン*/
+{
+  color: #8b4513;
+  text-decoration: none;  /*文字の下線が消える*/
+}
+
+nav a:hover   /*カーソルを重ねたときに文字をデザインする*/
+{
+  color: #ff0000;
+}
+
+nav a.selected 
+{
+  color: #000;
+}
+
+/*アーティクル*/
+article
+{
+  background-color: #ffffff;
+  width: 900px;              /*だいたい１行５２文字くらいになる*/
+  margin-left: auto;         
+  margin-right: auto;
+  border: solid 1px #aaaaaa;  /* 罫線太さ１pxのグレー*/
+  padding: 30px;              /*アーティクルの内側上下左右３０pxの余白*/
+  box-sizing: border-box;     /*widthの範囲をコンテンツから罫線までに広げる*/
+  margin-bottom: 15px;        /*アーティクルとフッターの余白を設定*/
+  box-shadow: 1px 1px 3px #aaaaaa; /*アーティクル（box）に影をつける*/
+  border-radius: 20px;        /*罫線の角を丸くする*/
+}
+
+article h1
+{
+  font-family: 'メイリオ', sans-serif;  /*h1の文字にだけフォントの指定*/
+  font-size: 38px;
+  margin-top: 0;   /*タイトルの上の余白を０に*/
+  margin-bottom: 0;
+  border-bottom: solid 5px #8b4513;
+}
+
+article h2
+{
+  border-bottom: solid 5px #8b4513;
+}
+
+/*フッター*/
+footer 
+{
+  width: 900px;  /*だいたい１行５２文字くらいになる*/
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+
